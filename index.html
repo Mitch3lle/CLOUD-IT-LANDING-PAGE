@@ -7,39 +7,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="top-nav">
+    <ul>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
 
     <!-- Hero Section -->
     <header class="hero">
+    <div class="floating"></div>
+     <div class="floating floating2"></div>
         <div class="container">
-            <h1>Reliable Cloud & IT Support for Growing Businesses</h1>
+            <h1 class="animated-heading">
+               <span>Reliable</span>
+               <span>Cloud</span>
+               <span>&</span>
+               <span>IT</span>
+               <span>Support</span>
+               <span>for</span>
+               <span>Growing</span>
+               <span>Businesses</span>
+              </h1>
             <p>Secure, scalable, and stress-free cloud solutions tailored for small businesses.</p>
             <a href="#contact" class="btn-primary">Get Free Consultation</a>
         </div>
     </header>
 
     <!-- Services -->
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="card">
-                    <h3>Cloud Migration</h3>
-                    <p>Move your infrastructure to the cloud safely and efficiently.</p>
-                </div>
-                <div class="card">
-                    <h3>24/7 IT Support</h3>
-                    <p>Round-the-clock monitoring and rapid issue resolution.</p>
-                </div>
-                <div class="card">
-                    <h3>Security & Backup</h3>
-                    <p>Protect your data with enterprise-level security solutions.</p>
-                </div>
-            </div>
+    <section id=" services" class="services">
+        <div class="container" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+        <div class="card">
+            <h3>Cloud Migration</h3>
+            <p>Move your infrastructure to the cloud safely and efficiently.</p>
+            <button class="card-btn" data-target="#why-us">Learn More</button>
         </div>
+        <div class="card">
+            <h3>24/7 IT Support</h3>
+            <p>Round-the-clock monitoring and rapid issue resolution.</p>
+            <button class="card-btn" data-target="#contact">Learn More</button>
+        </div>
+        <div class="card">
+            <h3>Security & Backup</h3>
+            <p>Protect your data with enterprise-level security solutions.</p>
+            <button class="card-btn" data-target="#contact">Learn More</button>
+        </div>
+    </div>
+</div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="why-us">
+    <section id="why-us" class="why-us">
         <div class="container">
             <h2>Why Choose Us?</h2>
             <ul>
