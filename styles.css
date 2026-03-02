@@ -208,3 +208,13 @@ footer {
         transform: translateY(0);
     }
 }
+/* Remove bullets and padding from Why Choose Us list */
+.why-us ul {
+    list-style: none;       /* Remove bullets */
+    padding: 0;             /* Remove default padding */
+    margin: 20px 0;         /* Optional spacing */
+}
+
+.why-us li {
+    margin-bottom: 10px;    /* Space between items */
+}
