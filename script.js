@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if(service && servicesInfo[service]){
                 modalTitle.innerText = servicesInfo[service].title;
                 modalDesc.innerText = servicesInfo[service].desc;
-                modal.style.display = "block";
+                modal.style.display = "flex";
                 document.body.style.overflow = "hidden"; // prevent scroll behind modal
             }
 
@@ -86,4 +86,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+window.addEventListener("click", (e) => {
+    if(e.target === modal){
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+
+        document.querySelectorAll(".card").forEach(card => {
+            card.classList.remove("active");
+        });
+    }
+});
 });
