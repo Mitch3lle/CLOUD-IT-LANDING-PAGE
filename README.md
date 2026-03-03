@@ -21,6 +21,7 @@ and focuses on lead generation and basic marketing analytics.
 
 - HTML
 - CSS
+- JavaScript
 
 **Cloud Services (AWS)**
 
