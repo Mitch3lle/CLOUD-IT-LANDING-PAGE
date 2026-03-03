@@ -52,7 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = btn.parentElement;
 
             // Optional card highlight animation
-            card.classList.toggle("active");
+            document.querySelectorAll(".card").forEach(c => c.classList.remove("active"));
+            card.classList.add("active");
 
             // Open modal
             const service = btn.getAttribute("data-service");
