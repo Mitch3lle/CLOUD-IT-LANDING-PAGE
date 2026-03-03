@@ -74,17 +74,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // --- Close modal ---
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto";
-    });
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
 
-    window.addEventListener("click", (e) => {
-        if(e.target === modal){
-            modal.style.display = "none";
-            document.body.style.overflow = "auto";
-        }
+    // Remove active class from all cards
+    document.querySelectorAll(".card").forEach(card => {
+        card.classList.remove("active");
     });
+});
 
 window.addEventListener("click", (e) => {
     if(e.target === modal){
