@@ -41,7 +41,22 @@ User → S3 Hosted Website → API Gateway → Lambda → DynamoDB
 ## Current Status
 
 - Landing page created and tested locally
-- Cloud deployment in progress
+- S3 bucket created for static website
+- Static website hosting enabled
+- Public bucket policy applied
+- Website successfully accessible via S3 endpoint
+- Preparing for CloudFront setup
+
+## Deployment Log
+
+### Day 1 – Amazon S3 Static Hosting
+
+- Created S3 bucket: wakwaya-cloud-it-support
+- Disabled block public access
+- Enabled static website hosting (index.html)
+- Uploaded production build files
+- Applied public read bucket policy
+- Tested S3 website endpoint
 
 ## What I Learned
 
