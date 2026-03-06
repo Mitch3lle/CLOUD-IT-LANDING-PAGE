@@ -59,6 +59,14 @@ User → S3 Hosted Website → API Gateway → Lambda → DynamoDB
 - Applied public read bucket policy
 - Tested S3 website endpoint
 
+### Day 2 – CloudFront CDN Setup
+
+- Created a CloudFront distribution
+- Configured S3 static website as the origin
+- Enabled HTTP to HTTPS redirection
+- Set default root object to index.html
+- Tested CloudFront domain successfully
+
 ## What I Learned
 
 - Designing landing pages with a clear call-to-action
