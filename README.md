@@ -67,6 +67,23 @@ User → S3 Hosted Website → API Gateway → Lambda → DynamoDB
 - Set default root object to index.html
 - Tested CloudFront domain successfully
 
+## Day 3 Progress
+
+Created DynamoDB database for storing landing page leads.
+
+Service used:
+
+- Amazon DynamoDB
+
+Table:
+cloud-it-leads
+
+Partition Key:
+email
+
+Purpose:
+Store form submissions from the landing page.
+
 ## What I Learned
 
 - Designing landing pages with a clear call-to-action
