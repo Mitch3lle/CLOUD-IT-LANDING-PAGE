@@ -84,6 +84,19 @@ email
 Purpose:
 Store form submissions from the landing page.
 
+## Day 4 Progress
+
+Created backend using AWS Lambda.
+
+Function:
+save-lead-function
+
+Runtime:
+Python 3.12
+
+Purpose:
+Process form submissions from the landing page and store leads in DynamoDB.
+
 ## What I Learned
 
 - Designing landing pages with a clear call-to-action
