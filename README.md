@@ -97,6 +97,19 @@ Python 3.12
 Purpose:
 Process form submissions from the landing page and store leads in DynamoDB.
 
+## Day 5 Progress
+
+Connected AWS Lambda to DynamoDB.
+
+Actions completed:
+
+- Added IAM permissions for DynamoDB access
+- Updated Lambda code to store lead data
+- Tested successful database writes
+
+Result:
+Lambda can now store landing page leads in DynamoDB.
+
 ## What I Learned
 
 - Designing landing pages with a clear call-to-action
