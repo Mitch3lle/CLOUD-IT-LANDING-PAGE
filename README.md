@@ -110,6 +110,21 @@ Actions completed:
 Result:
 Lambda can now store landing page leads in DynamoDB.
 
+## Day 6 Progress
+
+Connected API Gateway to Lambda for lead submissions.
+
+Actions completed:
+
+Created POST route /submit-lead in API Gateway
+
+Updated Lambda to parse JSON body from requests
+
+Tested API with browser console fetch() calls
+
+Result:
+API now receives landing page data and stores it in DynamoDB.
+
 ## What I Learned
 
 - Designing landing pages with a clear call-to-action
