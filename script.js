@@ -1,13 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
+   // script.js
 
-    // --- Lead Form ---
-    const leadForm = document.getElementById("leadForm");
-    const formMessage = document.getElementById("formMessage");
+const leadForm = document.getElementById("leadForm");
+const formMessage = document.getElementById("formMessage");
 
-    leadForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        formMessage.innerText = "Form submission will be connected to AWS backend soon.";
-    });
+leadForm.addEventListener("submit", async (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const company = document.getElementById("company").value;
+
+    const data = { name, email, company };
+
+    try {
+        const response = await fetch(
+            "https://g38b15phri.execute-api.us-east-1.amazonaws.com/submit-lead",
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            }
+        );
+
+        const result = await response.json();
+
+        if (response.ok) {
+            formMessage.innerText = "Thank you! Your information was submitted, our team will contact you shortly!";
+            leadForm.reset(); // Optional: clear the form
+        } else {
+            formMessage.innerText = "Error: " + result.error;
+        }
+    } catch (error) {
+        console.error(error);
+        formMessage.innerText = "Something went wrong. Please try again.";
+    }
+});
 
     // --- Scroll Animations ---
     const sections = document.querySelectorAll("section");
